@@ -1,6 +1,6 @@
 # Patience Gate — Privacy Policy
 
-**Last updated:** 12 September 2026
+**Last updated:** 19 October 2026
 
 **Developer:** Patience Gate
 **Contact for privacy questions:** patiencegateapp@gmail.com
@@ -33,7 +33,7 @@ To do that, while the YouTube Shorts feed is open, the app reads the following f
 
 - **How long the current video is, and how far it has played.** Read from the on-screen progress bar's accessibility description.
 - **A short identifier for the current video.** Built by taking the visible caption text and creator handle and converting them into a fixed-length code (a hash). This is used only to notice when the video on screen has changed. The original text is not kept.
-- **Whether the current item is an advertisement.** Detected from the on-screen "Ad" or "Sponsored" label, so the app can stand down completely. Patience Gate never blocks, delays, skips, or interacts with advertising.
+- **Whether the current item is an advertisement.** Recognized by the layout of the page (its structure on screen), not by any "Ad" or "Sponsored" label or other wording, so the app can stand down completely. Patience Gate never blocks, delays, skips, or interacts with advertising.
 - **Whether the Shorts feed is currently on screen at all.** So the app can stop acting the moment you leave it.
 
 All of this is read in the moment, used immediately, and discarded. None of it is written to storage. None of it is transmitted.
@@ -55,9 +55,9 @@ All of this is read in the moment, used immediately, and discarded. None of it i
 A small amount of information is saved on the phone itself, in the app's private storage. It never leaves the device.
 
 - **Your settings.** Whether the gate is switched on, and whether optional features are enabled.
-- **Technical fault records.** If the app loses track of what YouTube is showing, it stops blocking (it fails open, so a child is never trapped on a video) and records that this happened. Each record contains only: a fixed internal name for which part of the app had trouble, a timestamp, the app version, and the Android version. It contains nothing about what was being watched, nothing about the user, and no identifiers of any kind.
+- **Technical fault records.** If the app loses track of what YouTube is showing, it stops blocking (it fails open, so a child is never trapped on a video) and records that this happened. Each record contains only a fixed internal name for which part of the app had trouble and a timestamp. It contains nothing about what was being watched, nothing about the user, and no identifiers of any kind.
 
-The app's screen includes a "Send this report" option for these fault records. **In the current version this does not transmit anything.** Because the app has no internet permission, it cannot. The option writes the report to the phone's local system log only. If a future version of the app ever transmits these reports, this policy will be updated before that version is released, and it will remain something you actively choose each time — never automatic.
+Problems are shown only inside the app. When you open the app yourself, it lists what went wrong, and you can dismiss the list with **OK**, which clears these records from the phone. The app does not send these records anywhere, does not offer to send them, and never shows a notification about them. If this keeps happening, you can email us at patiencegateapp@gmail.com.
 
 ---
 
@@ -78,7 +78,7 @@ No request to the developer is needed, and there is nothing for the developer to
 
 Patience Gate requests permission to use Android's Accessibility Service. Android shows you a warning when you enable this, and the app shows you its own explanation screen beforehand, which you must acknowledge before continuing.
 
-Patience Gate is declared to Google Play as a **monitoring tool** (`isMonitoringTool`), not as an accessibility tool. It is a parental-control app, not a tool for users with disabilities, and it does not claim otherwise. Because of this declaration, Google Play Protect may show a notice on the device stating that a monitoring application is installed. This is intentional and correct.
+Patience Gate is a parental-control app, not a tool for users with disabilities, and it is not declared to Google Play as an accessibility tool.
 
 The accessibility permission is used solely for the purpose described in section 2. It is not used to log activity, build a profile, monitor behaviour over time, or observe anything outside the YouTube Shorts feed.
 
