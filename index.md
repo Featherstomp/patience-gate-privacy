@@ -1,6 +1,6 @@
 # Patience Gate — Privacy Policy
 
-**Last updated:** 19 October 2026
+**Last updated:** 21 October 2026
 
 **Developer:** Patience Gate
 **Contact for privacy questions:** patiencegateapp@gmail.com
@@ -36,12 +36,12 @@ To do that, while the YouTube Shorts feed is open, the app reads the following f
 - **Whether the current item is an advertisement.** Recognized by the layout of the page (its structure on screen), not by any "Ad" or "Sponsored" label or other wording, so the app can stand down completely. Patience Gate never blocks, delays, skips, or interacts with advertising.
 - **Whether the Shorts feed is currently on screen at all.** So the app can stop acting the moment you leave it.
 
-All of this is read in the moment, used immediately, and discarded. None of it is written to storage. None of it is transmitted.
+All of this is read in the moment and used immediately. The app does not save any of it in its own storage, and none of it is transmitted. The one trace it leaves is a few short technical lines in Android's system log on the phone, described in section 3.
 
 **The app does not read, store, or transmit:**
 
 - The content of videos, images, or audio
-- Which specific videos were watched, or a history of them
+- A list or history of the videos watched: the app keeps none. The only trace is the scrambled fingerprint of the current video in the system log, described in section 3, which is not its caption or creator name
 - Anything from other apps — the accessibility service is scoped to the YouTube app
 - Messages, emails, contacts, photos, files, or browsing history
 - Passwords, payment details, or anything typed into any field
@@ -59,6 +59,8 @@ A small amount of information is saved on the phone itself, in the app's private
 
 Problems are shown only inside the app. When you open the app yourself, it lists what went wrong, and you can dismiss the list with **OK**, which clears these records from the phone. The app does not send these records anywhere, does not offer to send them, and never shows a notification about them. If this keeps happening, you can email us at patiencegateapp@gmail.com.
 
+**System log lines.** For troubleshooting, the app writes short technical lines to Android's system log on the phone, including a one-way scrambled fingerprint of the current video, not its caption or creator name. These lines never leave the phone, and Android overwrites them as the log fills. They are kept in Android's own log, not in the app's private storage.
+
 ---
 
 ## 4. Data retention and deletion
@@ -70,7 +72,7 @@ Everything the app stores is held in Android's standard app-private storage. You
 - Going to **Settings → Apps → Patience Gate → Storage → Clear data**, or
 - Uninstalling the app, which deletes all of it automatically.
 
-No request to the developer is needed, and there is nothing for the developer to delete on your behalf.
+The system log lines described in section 3 are not part of that storage: Android keeps and overwrites them itself, and clearing the app's data or uninstalling it does not remove lines already written. No request to the developer is needed, and there is nothing for the developer to delete on your behalf.
 
 ---
 
@@ -90,7 +92,7 @@ You can turn the accessibility permission off at any time in **Settings → Acce
 
 Patience Gate is designed to be used while a young child holds an adult's phone. It is installed and controlled by an adult.
 
-The app collects no personal information from anyone, including children. It does not build profiles, does not track behaviour across sessions, does not store any history of what was watched, and transmits nothing off the device. There is no mechanism by which information about a child using the phone could reach the developer or any third party.
+The app collects no personal information from anyone, including children. It does not build profiles, does not track behaviour across sessions, keeps no list or history of what was watched (apart from the scrambled video fingerprints in the system log described in section 3, which never leave the phone), and transmits nothing off the device. There is no mechanism by which information about a child using the phone could reach the developer or any third party.
 
 ---
 
