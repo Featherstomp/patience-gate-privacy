@@ -42,7 +42,7 @@ All of this is read in the moment and used immediately. The app does not save an
 
 - The content of videos, images, or audio
 - A list or history of the videos watched: the app keeps none. The only trace is the scrambled fingerprint of the current video in the system log, described in section 3, which is not its caption or creator name
-- Anything from other apps — the accessibility service is scoped to the YouTube app
+- Anything from other apps. Android passes the accessibility service events from every app; Patience Gate ignores them, except to notice which app is on screen so it knows when you've left YouTube.
 - Messages, emails, contacts, photos, files, or browsing history
 - Passwords, payment details, or anything typed into any field
 - Location
@@ -82,7 +82,7 @@ Patience Gate requests permission to use Android's Accessibility Service. Androi
 
 Patience Gate is a parental-control app, not a tool for users with disabilities, and it is not declared to Google Play as an accessibility tool.
 
-The accessibility permission is used solely for the purpose described in section 2. It is not used to log activity, build a profile, monitor behaviour over time, or observe anything outside the YouTube Shorts feed.
+The accessibility permission is used solely for the purpose described in section 2. It is not used to build a profile, keep a history, or monitor behaviour over time. Outside YouTube, it only notices which app is on screen.
 
 You can turn the accessibility permission off at any time in **Settings → Accessibility**, and the app stops doing anything immediately.
 
